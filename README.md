@@ -1,4 +1,4 @@
-start.ffhh
+start.ffef
 ==========
 
 Add a service
@@ -10,14 +10,14 @@ Development
 -----------
 
 	aptitude install jekyll
-	git clone git@github.com:freifunkhamburg/start-ffhh.git
-	cd start-ffhh/
+	git clone git@github.com:freifunkerfurt/start-ffef.git
+	cd start-ffef/
 	jekyll serve -w
 
 Deployment
 ----------
 
-	cd /var/www/start-ffhh/
+	cd /var/www/start-ffef/
 	git pull
 	jekyll build
 

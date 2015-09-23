@@ -1,11 +1,11 @@
 # Site settings
-title: start.ffhh
-description:      "Frei von Registrierung, Erfassung von persönlichen Informationen oder zeitlicher Limitierung. Freifunk Hamburg ist ein Netz, an dem jeder teilnehmen kann."
+title: start.ffef
+description:      "Frei von Registrierung, Erfassung von persönlichen Informationen oder zeitlicher Limitierung. Freifunk Erfurt ist ein Netz, an dem jeder teilnehmen kann."
 baseurl: ""
-organisation:     Freifunk Hamburg
-twitter_username: FreifunkHH
-github_username:  freifunkhamburg/start-ffhh
-about_page:       https://hamburg.freifunk.net/
+organisation:     Freifunk Erfurt
+twitter_username: FreifunkErfurt
+github_username:  freifunkerfurt/start-ffef
+about_page:       https://erfurt.freifunk.net/
 
 # Build settings
 markdown: kramdown

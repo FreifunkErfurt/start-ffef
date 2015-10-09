@@ -18,32 +18,32 @@
 #  url:      http://radio.ffhh/
 #  network:  intern
 - title:    Wiki
-  text:     Freifunk hinter der Bühne. Unsere Wissenssammlung
+  text:     Unsere Wissenssammlung im Wiki des Technikkultur-Vereins
   icon:     group
-  url:      https://wiki.freifunk.net/Freifunk_Hamburg
+  url:      https://www.technikkultur-erfurt.de/freifunk:start
   network:  public
 - title:    Verbindung
   text:     Zeigt Informationen über den Router, mit dem du gerade verbunden bist
   icon:     wifi
-  url:      http://knoten.ffhh/
+  url:      http://knoten.ffef/
   network:  intern
-- title:    Pastebin
-  text:     Texte schnell und unkompliziert teilen
-  icon:     file
-  url:      http://paste.ffhh
+- title:    Bilder-Dump
+  text:     Bilder schnell und unkompliziert teilen
+  icon:     picture-o
+  url:      http://10.99.254.1/bilder
   network:  intern
 - title:    Chat
   text:     Peer-to-Peer Text, Audio und Video Chats im Browser mit WebRTC
   icon:     comments
-  url:      http://chat.ffhh
+  url:      http://chat.ffef
   network:  intern
-- title:    ifconfig
-  text:     Zeigt deine IPv4 und IPv6 Adresse
-  icon:     gears
-  url:      http://ifconfig.ffhh
+- title:    FritzB31Server
+  text:     Fileserver von SE515
+  icon:     file
+  url:      http://fritzb31server.ffef
   network:  intern
-- title:    Medien
-  text:     Hier sammeln wir Grafiken, Flugblätter und vieles mehr. Schaut euch um
-  icon:     folder-open
-  url:      http://media.services.ffhh/
+- title:    Dump1090 (Stephan)
+  text:     SDR-Flugradar mit dump1090 auf dem RaspberryPi von Stephan
+  icon:     plane
+  url:      http://bastelpi.ffef:8080/
   network:  intern

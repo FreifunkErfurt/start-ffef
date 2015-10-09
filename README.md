@@ -10,7 +10,7 @@ Development
 -----------
 
 	aptitude install jekyll
-	git clone git@github.com:freifunkerfurt/start-ffef.git
+	git clone https://github.com/FreifunkErfurt/start-ffef.git
 	cd start-ffef/
 	jekyll serve -w
 

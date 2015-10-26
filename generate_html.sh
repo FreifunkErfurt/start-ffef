@@ -62,7 +62,7 @@ CONTENT=$(awk \
 	'{
 		sub(/__DESCRIPTION__/, DESCRIPTION);
 		sub(/__BASE_URL__/, BASEURL);
-		sub(/__TITLE__/, TITLE);
+		sub(/__SITE_TITLE__/, TITLE);
 		sub(/__ORGANISATION__/, ORGANISATION);
 		sub(/__SOCIAL__/, SOCIAL);
 		sub(/__SERVICES__/, SERVICES);

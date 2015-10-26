@@ -5,7 +5,7 @@ o_dir=$(pwd)
 cd $(dirname $0)
 PWD=$(pwd)
 cd "$o_dir"
-source "$PWD/config.sh"
+. "$PWD/config.sh"
 
 echo "Starting content generator"
 
@@ -33,7 +33,7 @@ TEXT=""
 for service in $(find "$PWD/data/" -name '*.conf')
 do
 	echo "Found service config: $service"
-	source $service
+	. $service
 	service_code=$(awk -v ICON="$ICON" -v URL="$URL" -v TITLE="$TITLE" \
 		-v TEXT="$TEXT" '{
 			sub(/__ICON__/, ICON);

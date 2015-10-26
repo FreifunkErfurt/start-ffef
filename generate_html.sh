@@ -14,14 +14,14 @@ TWITTER_CONTENT=""
 if [ ! -z "$TWITTER" ]
 then
 	echo "Adding Twitter link"
-	TWITTER_CONTENT=$(sed "s/__TWITTER__/$TWITTER/g" .templates/twitter.html)
+	TWITTER_CONTENT=$(sed "s/__TWITTER__/$TWITTER/g" templates/twitter.html)
 fi
 
 GITHUB_CONTENT=""
 if [ ! -z "$GITHUB" ]
 then
 	echo "Adding Github link"
-	GITHUB_CONTENT=$(sed "s|__GITHUB__|$GITHUB|g" .templates/github.html)
+	GITHUB_CONTENT=$(sed "s|__GITHUB__|$GITHUB|g" templates/github.html)
 fi
 
 SOCIAL="<ul>$TWITTER_CONTENT $GITHUB_CONTENT</ul>"
@@ -30,7 +30,7 @@ ICON=""
 URL=""
 TITLE=""
 TEXT=""
-for service in $(find "$PWD/.data/" -name '*.conf')
+for service in $(find "$PWD/data/" -name '*.conf')
 do
 	echo "Found service config: $service"
 	source $service
@@ -41,7 +41,7 @@ do
 			sub(/__TITLE__/, TITLE);
 			sub(/__TEXT__/, TEXT);
 			print;
-		}' .templates/service.html)
+		}' templates/service.html)
 	SERVICES="$SERVICES $service_code"
 
 	# Reset service variables, so nobody uses them accidentally
@@ -67,7 +67,7 @@ CONTENT=$(awk \
 		sub(/__SOCIAL__/, SOCIAL);
 		sub(/__SERVICES__/, SERVICES);
 		print;
-	}' .templates/index.html)
+	}' templates/index.html)
 
 # Put the content in the main HTML file
 echo "Writing main file"
